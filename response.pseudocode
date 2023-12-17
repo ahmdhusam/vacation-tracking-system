@@ -1,0 +1,18 @@
+fn responseToVacationRequest(requestId, responseData):
+    if isAuthenticated():
+        if isManager():
+            set request = getVacationRequestById(requestId)
+
+            if responseData.status is rejected:
+               set request.explanation = responseData.explanation
+            
+            set request.status = responseData.status
+
+            notifyEmployee(request.employeeId)
+            updateData(request)
+            
+            return "The request was updated successfully"
+        else:
+            return ForbiddenException
+    else:
+        return UnauthorizedException

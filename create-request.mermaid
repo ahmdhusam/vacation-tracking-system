@@ -1,0 +1,7 @@
+flowchart TD
+    A([Create New Request]) --> B{Correct Information}
+    B-- No --> C[Return Error] --> A
+    B-- Yes --> D{Require Manager Approval}
+    D-- No --> E[(Store)]
+    D-- Yes --> F[Notify The Manager]
+    F-->E

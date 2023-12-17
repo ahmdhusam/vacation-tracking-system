@@ -1,0 +1,13 @@
+fn createVacationRequest(vacationInformation):
+    if isAuthenticated():
+        if validateEmployeeInformation(vacationInformation) is valid:
+            if requireManagerApproval(vacationInformation):
+                notifyManager()
+
+            saveData(vacationInformation)
+            
+            return "The request was created successfully"
+        else:
+            return  BadRequestException
+    else:
+        return  UnauthorizedException

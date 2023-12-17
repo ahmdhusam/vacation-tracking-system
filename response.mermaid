@@ -1,0 +1,10 @@
+flowchart TD
+    A([Clicking on a link embedded in the e-mail or explicitly logging])--> B{Authorized}
+    B-- No --> C[Return Error]
+    C--> A
+    B-- Yes --> D[Return the list of pending approval]
+    D--> E[Select one]
+    E-- rejected -->F[Enter an explanation]
+    F-->G[Notify the employee]
+    G-->H[(Store)]
+    E-- approved --> G

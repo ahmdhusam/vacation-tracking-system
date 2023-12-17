@@ -1,0 +1,108 @@
+<mxfile host="65bd71144e">
+    <diagram id="1GKSqPEH9Bx6ItpdnrnG" name="Page-1">
+        <mxGraphModel dx="1253" dy="698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="40" style="edgeStyle=none;shape=link;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="29" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="438" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="whiteSpace=wrap;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="378" y="100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Requirements" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="408" y="115" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="orthogonalLoop=1;jettySize=auto;html=1;shape=link;width=-1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="198" y="240" as="sourcePoint"/>
+                        <mxPoint x="678" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="675.5" y="240" as="sourcePoint"/>
+                        <mxPoint x="675.5" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="518" y="240" as="sourcePoint"/>
+                        <mxPoint x="518" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="355.5" y="240" as="sourcePoint"/>
+                        <mxPoint x="355.5" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="198" y="240" as="sourcePoint"/>
+                        <mxPoint x="198" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="" style="whiteSpace=wrap;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="615.5" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Constraints" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="645.5" y="375" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="whiteSpace=wrap;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="458" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Non-Function" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="478" y="375" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="whiteSpace=wrap;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="295.5" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Function" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="325.5" y="375" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="whiteSpace=wrap;html=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="138" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Vision" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="168" y="375" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="*&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;improve the internal business processes of&lt;/span&gt;&lt;div&gt;this organization&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="88" y="440" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="* Vacation requests" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="268" y="440" width="175" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="* Cancel vacation request" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="268" y="470" width="175" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="* Approve/Reject&lt;br&gt;&amp;nbsp;vacation request" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="268" y="500" width="175" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="* List of vacation requests" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="268" y="535" width="175" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="*&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;will require at most one manual approval by the immediate&lt;/span&gt;&lt;div&gt;manager&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="588" y="440" width="175" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="* uses the portal’s single-sign-on mechanisms for all authentication" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="588" y="510" width="175" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="* easy to use" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="458" y="440" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="* Cancel Approved Request" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="268" y="565" width="175" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="* Edit Pending Request" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="275.5" y="595" width="175" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="* Uses existing hardware and middleware" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="588" y="560" width="175" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

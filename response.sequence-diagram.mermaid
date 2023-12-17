@@ -1,0 +1,39 @@
+sequenceDiagram
+    actor M as Manager
+    participant S as single-sign-on System
+    participant V as Validation Layer
+    participant N as Notifications System
+    participant D as Database
+    actor E as Employee
+
+    M->>S: Select request
+    activate S
+    alt Is authenticated
+        alt Is manager
+        S->>S: Is manager
+                S->>V:  
+                activate V
+            alt Is Valid
+                    par Notify the employee
+                        V->>N: 
+                        activate N
+                        N->>E: Notify the employee with the state of the request.
+                        deactivate N
+                    and Update request
+                        V->>D: Update the state of the request.
+                        activate D
+                        D-->>M: The request was updated successfully.
+                        deactivate D
+                    end
+            else
+                V-->>M: BadRequest error.
+                deactivate V
+            end
+        else 
+            S-->>M: Forbidden error.
+        end
+    else
+    S-->>M: Unauthorized error.
+    deactivate S
+    end
+    

@@ -1,0 +1,42 @@
+sequenceDiagram
+    actor E as Employee
+    participant S as single-sign-on System
+    participant V as Validation Layer
+    participant N as Notifications System
+    participant D as Database
+    actor M as Manager
+
+    E->>S: Create vacation time request
+    activate S
+    alt Is authenticated
+        alt Valid Information
+            S->>V: Validate Employee Information
+            activate V
+            alt Require approval
+                par Notify Manager
+                    V->>N: Notify a manager
+                    activate N
+                    N->>M: Notify The manager
+                    deactivate N
+                and Save request
+                    V->>D: Save request
+                    activate D
+                    D-->>E: The request was created successfully
+                    deactivate D
+                end
+            else
+            V->>D: Save request
+            activate D
+            D-->>E: The request was created successfully
+            deactivate D
+            end
+        else
+            V-->>E: BadRequest error
+            deactivate V
+        end
+
+    else
+    S-->>E: Unauthorized error
+    deactivate S
+    end
+    
