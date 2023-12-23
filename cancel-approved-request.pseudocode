@@ -1,0 +1,26 @@
+function cancelApprovedRequest(employeeId: int, requestId: int, explanation: ?string) {
+    if(!isAuthenticated(employeeId)) {
+        return error;
+    }
+
+    VacationRequest vacationRequest = getVacationRequest(requestId);
+
+    if(!vacationRequest.isApproved()) {
+        return error;
+    }
+
+    if(!vacationRequest.isInFuture()) {
+        if(isNull(explanation)){
+            return error
+        }
+        
+        vacationRequest.explanation = explanation;
+    }
+
+
+    vacationRequest.cancel();
+
+    vacationRequest.save();
+    
+    notifyManager(vacationRequest.managerId)
+}

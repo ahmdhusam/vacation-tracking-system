@@ -1,0 +1,18 @@
+flowchart TD
+    classDef Red fill:#f00
+    A([Select request to edit])
+    B[error]:::Red
+    C{isPending}
+    D{isValidInformation}
+    F[set information]
+    H[(DB)]
+    
+    B-->A
+
+    A-->C
+    C-- yes -->D
+    C-- no -->B
+    D-- yes -->F
+    D-- no -->B
+    F-->H
+    

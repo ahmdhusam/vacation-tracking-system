@@ -1,0 +1,19 @@
+function editPendingRequest(employeeId: int, requestId: int, vacationInformation) {
+    if(!isAuthenticated(employeeId)) {
+        return error;
+    }
+
+    VacationRequest vacationRequest = getVacationRequest(requestId);
+
+    if(!vacationRequest.isPending()) {
+        return error;
+    }
+
+    if(!isValidInformation(vacationInformation)) {
+        return error;
+    }
+
+    vacationRequest.setInformation(vacationInformation);
+
+    vacationRequest.save();
+}

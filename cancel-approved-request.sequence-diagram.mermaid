@@ -1,0 +1,56 @@
+sequenceDiagram
+    actor E as Employee
+    participant S as single-sign-on System
+    participant V as Validation Layer
+    participant C as Change State
+    participant N as Notifications System
+    participant D as Database
+    actor M as Manager
+
+    E->>S: Select vacation request to cancel
+    activate S
+    alt Is authenticated
+        alt validate
+            S->>V: isApproved
+            activate V
+            alt Is in the future
+                V->>C: change status to canceled
+                activate C
+                par Notify Manager
+                    V-->>N: Notify a manager
+                    activate N
+                    N-->>M: Notify The manager
+                    deactivate N
+                and Save request
+                    V->>D: Save request
+                    activate D
+                    D-->>E: The request was canceled successfully
+                    deactivate D
+                end
+            else
+                V->>V: require explanation
+                V->>C: change status to canceled
+                activate C
+                par Notify Manager
+                    V-->>N: Notify a manager
+                    activate N
+                    N-->>M: Notify The manager
+                    deactivate N
+                and Save request
+                    V->>D: Save request
+                    activate D
+                    D-->>E: The request was canceled successfully
+                    deactivate D
+                end
+            deactivate C
+            end
+        else
+            V-->>E: BadRequest error
+            deactivate V
+        end
+
+    else
+    S-->>E: Unauthorized error
+    deactivate S
+    end
+    

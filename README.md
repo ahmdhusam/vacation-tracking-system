@@ -36,6 +36,14 @@
         <p align="center">
           <img src="imgs/response.png">
         </p>
+    - ##### Cancel Approved Request
+        <p align="center">
+          <img src="imgs/cancel-approved-request.flowchart.png">
+        </p>
+    - ##### Edit Pending Request
+        <p align="center">
+          <img src="imgs/edit-pending-request.flowchart.png">
+        </p>
   - #### Sequence diagram
     - ##### Create vacation request
         <p align="center">
@@ -45,6 +53,16 @@
         <p align="center">
           <img src="imgs/response.sequence-diagram.png">
         </p>
+    - ##### Cancel Approved Request
+        <p align="center">
+          <img src="imgs/cancel-approved-request.sequence-diagram.png">
+        </p>
+    - ##### Edit Pending Request
+        <p align="center">
+          <img src="imgs/edit-pending-request.sequence-diagram.png">
+        </p>
   - #### Pseudocode
     - [Create vacation request](/create-request.pseudocode)
     - [Response to vacation request](/response.pseudocode)
+    - [Cancel Approved Request](/cancel-approved-request.pseudocode)
+    - [Edit Pending Request](/edit-pending-request.pseudocode)

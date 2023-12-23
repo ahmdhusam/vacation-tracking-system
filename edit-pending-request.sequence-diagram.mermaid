@@ -1,0 +1,31 @@
+sequenceDiagram
+    actor E as Employee
+    participant S as single-sign-on System
+    participant V as Validation Layer
+    participant U as Update the request data
+    participant D as Database
+
+    E->>S: Select vacation request to edit
+    activate S
+    alt Is authenticated
+        alt validate
+            S->>V: Is pending
+            activate V
+            V->>V: Correct Information
+            V->>U: Set information
+            activate U
+            U->>D: Save request
+            deactivate U
+            activate D
+            D-->>E: The request was updated successfully
+            deactivate D
+        else
+            V-->>E: BadRequest error
+            deactivate V
+        end
+
+    else
+    S-->>E: Unauthorized error
+    deactivate S
+    end
+    

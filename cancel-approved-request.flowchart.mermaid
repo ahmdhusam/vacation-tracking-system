@@ -1,0 +1,24 @@
+flowchart TD
+    classDef Red fill:#f00
+    A([Select request to cancel])
+    B[error]:::Red
+    C{isApproved}
+    D{isInFuture}
+    E[require explanation]
+    F[set explanation]
+    G[change status to canceled]
+    H[(DB)]
+    I[notifyManager]
+    
+    B-->A
+
+    A-->C
+    C-- yes -->D
+    C-- no -->B
+    D-- yes -->G
+    D-- no -->E
+    E-->F
+    F-->G
+    G-->H
+    G-->I
+    
